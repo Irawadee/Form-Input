@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="/" method="get">
+      <label for="username">Your Name</label>
+      <input type="text" name="user-name" id="username" />
+
+      <label for="usermessages">Your Messages</label>
+      <textarea name="user-messages" id="usermessages"></textarea>
+
+      <label for="useremail">Your Email</label>
+      <input type="email" name="user-email" id="useremail" />
+      <label for="usertel">Your Tel.</label>
+      <input type="number" name="user-tel" id="usertel" />
+      <label for="userage">Your Age</label>
+      <input type="number" name="user-age" id="userage" />
+      <label for="userbirthdate">Your Birthdate</label>
+      <input type="date" name="user-birthdate" id="userbirthdate" />
+      <hr />
+      <h2>How should we verify your account?</h2>
+      <div class="form-inline">
+        <input
+          type="radio"
+          name="verify"
+          id="text-messages"
+          value="textmessages"
+        />
+        <label for="text-messages">Verify by Text Messages</label>
+      </div>
+      <div class="form-inline">
+        <input type="radio" name="verify" id="email" value="Emailsending" />
+        <label for="email">Verify by Email</label>
+      </div>
+      <div class="form-inline">
+        <input type="radio" name="verify" id="call" value="Calling" />
+        <label for="call">Verify by Calling</label>
+      </div>
+
+      <div class="form-inline">
+        <input type="checkbox" name="term" id="agree-term" />
+        <label for="agree-term">Agree to Terms?</label>
+      </div>
+
+      <div class="form-inline">
+        <input type="checkbox" name="contact" id="via-email" value="ByEmail" />
+        <label for="via-email">Contact via Email</label>
+      </div>
+      <div class="form-inline">
+        <input type="checkbox" name="contact" id="via-phone" value="ByPhone" />
+        <label for="via-phone">Contact via Phone</label>
+      </div>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
