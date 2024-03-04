@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="FormchallengeStyles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="/Challenge" method="get">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="user-name">Your Name</label>
+              <input type="text" id="user-name" required />
+            </li>
+            <li>
+              <label for="user-email">Your Email Address</label>
+              <input type="email" id="user-email" required />
+            </li>
+            <li>
+              <label for="user-number">Your Phone Number</label>
+              <input type="tel" id="user-number" required minlength="10" />
+            </li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <li>
+              <label for="user-messages">Your Messages</label>
+              <textarea
+                name="usermessages"
+                id="user-messages"
+                rows="10"
+                required
+                minlength="150"
+              ></textarea>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <label for="user-channel">How did you find us?</label>
+          <select name="channel" id="user-channel" required>
+            <option value="website">By Website</option>
+            <option value="friends">By Friends</option>
+          </select>
+        </section>
+
+        <section>
+          <h2>How Should We Reply?</h2>
+          <ul>
+            <li class="inline-list">
+              <input type="radio" name="Contact" id="call" required />
+              <label for="call">Call Me </label>
+            </li>
+            <li class="inline-list">
+              <input type="radio" name="Contact" id="email" />
+              <label for="email">Email Me </label>
+            </li>
+
+            <li class="inline-list">
+              <input type="radio" name="Contact" id="no-contact" />
+              <label for="no-contact">Do not contact me </label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="inline-section">
+          <input type="checkbox" name="Terms" id="term" required />
+          <label for="term">Agree to Terms?</label>
+        </section>
+
+        <section class="btn">
+          <button type="reset" class="btn-empty">Clear</button>
+          <button type="submit" class="btn-filled">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
