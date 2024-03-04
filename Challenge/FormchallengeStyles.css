@@ -1,0 +1,96 @@
+body {
+  background-color: aliceblue;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(43, 42, 42);
+}
+
+h2 {
+  color: rgb(43, 42, 42);
+}
+form {
+  width: 40rem;
+  margin: auto;
+  background-color: lavender;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgb(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  margin-bottom: 1rem;
+  list-style: none;
+  margin: 0;
+}
+
+label {
+  color: rgb(63, 61, 61);
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid rgb(113, 112, 108);
+  border-radius: 4px;
+}
+
+textarea {
+  resize: none;
+}
+
+.inline-list {
+  display: flex;
+  width: auto;
+}
+
+.inline-list input {
+  width: auto;
+  margin: 0;
+  margin-right: 0.5rem;
+}
+
+.inline-section {
+  display: flex;
+}
+
+.inline-section input {
+  width: auto;
+  margin: 0;
+  margin-right: 0.5rem;
+}
+
+button {
+  background-color: rgb(140, 83, 238);
+  color: white;
+  padding: 0.5rem;
+  width: 5rem;
+  border: 1px solid rgb(6, 6, 60);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-empty:hover {
+  background-color: rgb(59, 56, 225);
+  border-color: rgb(26, 26, 54);
+}
+.btn-filled:hover {
+  background-color: rgb(59, 56, 225);
+  border-color: rgb(26, 26, 54);
+}
+.btn {
+  text-align: right;
+}
